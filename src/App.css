@@ -1,0 +1,155 @@
+.container {
+  max-width: 35%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.task-form {
+  margin-bottom: 1rem;
+  padding-right : 15px;
+}
+
+.priority {
+  width: 103%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  font-family:'Gill Sans', 'Trebuchet MS', sans-serif;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.fixed-textarea {
+  height: 90px;
+  resize: none;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre-wrap; 
+  word-wrap:normal;
+}
+
+.add-task-button {
+  width: 103%;
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-task-button:hover {
+  background-color: #2563eb;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-title {
+  font-weight: bold;
+  font-family:'Gill Sans', 'Trebuchet MS', sans-serif;
+}
+.task-item.completed {
+  opacity:0.5;
+  .task-title,
+  .task-description,
+  .task-priority {
+    text-decoration: line-through;
+  }
+  .edit-button,
+  .delete-button {
+    display: none;
+  }
+}
+.task-description {
+  font-family:'Gill Sans', 'Trebuchet MS', sans-serif;
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-button,
+.cancel-button,
+.complete-button,
+.edit-button,
+.delete-button {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.complete-button {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-priority {
+  font-weight: bold;
+}
+
+.task-priority.High {
+  color: #dc3545;
+}
+
+.task-priority.Medium {
+  color: #ffc107;
+}
+
+.task-priority.Low {
+  color: #28a745;
+}
