@@ -63,6 +63,7 @@
 .task-list {
   list-style-type: none;
   padding: 0;
+  background-image: url('/IMG_2268.JPG');
 }
 
 .task-item {
@@ -71,6 +72,11 @@
   margin-bottom: 0.5rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-image: url('/Wallpaper-1233.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .task-title {
